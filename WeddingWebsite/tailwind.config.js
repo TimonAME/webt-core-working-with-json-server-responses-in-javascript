@@ -1,20 +1,19 @@
-// tailwind.config.js
-import typography from '@tailwindcss/typography';
-import forms from '@tailwindcss/forms';
-import aspectRatio from '@tailwindcss/aspect-ratio';
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {},
   },
   plugins: [
-    typography,
-    forms,
-    aspectRatio,
   ],
+  screens: { 
+    //standard screen sizes for responsive design 
+    //remove/add for more brake points
+  sm: "640px",
+  md: "768px",
+  //xl: "1080px",
+  },
 }
+
