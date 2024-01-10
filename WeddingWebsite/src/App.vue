@@ -36,23 +36,14 @@ let getWedding = async function() { // make the function async
 
   let response = await fetch('/TRAUMHOCHZEITOGD.json') // wait for the fetch to complete
   let fetchedData = await response.json() // wait for the response to be parsed as JSON
+  //console.log(fetchedData)
 
   data.value = fetchedData.features[random].properties // store the fetched data in the reactive variable
   showData.value = true // set showData to true after data is fetched
 
-  /*
-  console.log(data.value.LOCATION)
-  console.log(data.value.ADRESSE)
-  console.log(data.value.WEBLINK1)
-  */
- 
   //data.value.features[random].properties.
   //                                      .LOCATION
   //                                      .ADRESSE
   //                                      .WEBLINK1
 }
-
-
-/* For Google Maps */
-// npm install -S @fawmi/vue-google-maps
 </script>
